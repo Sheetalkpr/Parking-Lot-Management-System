@@ -30,6 +30,7 @@ To run the Parking Lot Management System, you need:
 - Clone or download this repository to your local machine.
 - Open a terminal or command prompt.
 - Navigate to the project directory: **cd /Path/To/Parking-Lot-Management-System**
+- Open PostgreSQL then write a script for ParkingLot table i.e. **INSERT INTO public.parking_lot(id, parking_level, total_capacity, available_space) VALUES (2, 0, 2, 2), (0, 1, 2, 2), (1, 2, 2, 2);** and run this script.
 - Run the application:  **python wsgi.py**
 - Open a web browser and visit **http://127.0.0.1:5000**, allowing you to interact with the application.
 
