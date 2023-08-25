@@ -1,4 +1,4 @@
-# Parking Management System
+# Parking Lot Management System
 
 This is a web-based parking lot management application built using Flask. The application allows users to enter and exit vehicles from the parking lot, calculate parking fees, manage parking capacities, and view parking-related statistics.
 
@@ -19,7 +19,7 @@ This is a web-based parking lot management application built using Flask. The ap
 ## Getting Started
 
 ### Prerequisites
-To run the Parking Management System, you need:
+To run the Parking Lot Management System, you need:
 - Python 3.11.4
 - Required Python libraries: flask, flask-sqlalchemy, psycopg2
 - To install these libraries use pip (**pip install library_name**)
@@ -29,7 +29,7 @@ To run the Parking Management System, you need:
 
 - Clone or download this repository to your local machine.
 - Open a terminal or command prompt.
-- Navigate to the project directory: **cd /Path/To/Parking-Management-System**
+- Navigate to the project directory: **cd /Path/To/Parking-Lot-Management-System**
 - Run the application:  **python wsgi.py**
 - Open a web browser and visit **http://127.0.0.1:5000**, allowing you to interact with the application.
 
