@@ -68,6 +68,7 @@ def exit_vehicle():
                 return render_template("exit_ticket.html", ticket=id, entry_time=entry_time.time().strftime("%H:%M:%S"), exit_time=exit_time.time().strftime("%H:%M:%S"),
                                     duration=total_time, cost=price, number_plate=number_plate, category=category,
                                     entry_date=entry_date, exit_date=exit_date)
+            
             else:
                 flash("Ticket Id Not Available")
                 return render_template("exit.html")

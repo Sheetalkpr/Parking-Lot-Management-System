@@ -1,9 +1,10 @@
 ﻿from app.main import app, db
 from app.models import ParkingLot
 from flask import render_template, request, flash
-
+ 
 @app.route("/capacity", methods=["POST", "GET"])
 def capacity():
+    print(request.method)
     try:
         if request.method == "POST":
             category = request.form["category"]
@@ -17,10 +18,12 @@ def capacity():
             parking = ParkingLot.query.filter_by(id=cate).first()
             parking.total_capacity = capacity
             parking.available_space = available
+            print(parking)
             db.session.commit()
             flash(f"{category.capitalize()} vehicle capacity is changed")
             return render_template("capacity.html")
         else:
             return render_template("capacity.html")
+        
     except Exception as e:
         return f"<p>{str(e)}</p>"

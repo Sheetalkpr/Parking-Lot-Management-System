@@ -1,5 +1,5 @@
 ﻿from app.main import app, db, index
-from flask import render_template, request, flash, redirect, url_for
+from flask import render_template, request, flash
 from app.models import Vehicle, Ticket, ParkingLot
 from datetime import datetime
 

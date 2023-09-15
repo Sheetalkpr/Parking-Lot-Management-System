@@ -104,14 +104,14 @@
             </select>
 
             <label for="capacity"> <strong>New Capacity: </strong></label>
-            <input type="number" id="capacity" name="capacity" placeholder="Enter New Capacity" min="0" required>
+            <input type="number" id="capacity" name="capacity" placeholder="Enter New Total Capacity" min="0" required>
 
             <label for="available"> <strong> Available Space: </strong></label>
-            <input type="number" id="available" name="available" placeholder="Current Available Capacity" min="0"
+            <input type="number" id="available" name="available" placeholder="Enter Available Capacity" min="0"
                 required>
 
             <!-- Larger and equal-sized buttons -->
-            <button class="button" id="changeCapacityButton">Change Capacity</button>
+            <button type="submit" class="button" id="changeCapacityButton">Change Capacity</button>
         </form>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
